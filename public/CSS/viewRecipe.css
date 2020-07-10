@@ -1,0 +1,23 @@
+#mainPicView {
+    float: left;
+    margin: 15px 15px 15px 15px;
+}
+
+#picView {
+    width: 300px;
+    height: 250px;
+}
+
+#rcpInfo {
+    margin-left: -70px;
+}
+
+#description-ingridients {
+    float: left;
+    margin: 15px 15px 15px 50px;
+}
+
+#steps {
+    float: left;
+    margin: 15px 15px 15px 50px;
+}

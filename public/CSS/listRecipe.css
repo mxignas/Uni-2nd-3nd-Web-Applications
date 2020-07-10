@@ -1,0 +1,53 @@
+.imagePreview{
+    float:left;
+    height: 200px;
+    width: 250px;
+    border: 2px solid #dddddd;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+
+#inpFile{
+    margin-bottom: 30px;
+}
+
+#descripCreate{
+    margin-right: -140px;
+}
+
+#personalInformation{
+    margin: 10px 10px 10px 10px;
+    float: left; 
+}
+
+#recipeInformation{
+    margin: 10px 10px 10px 55px;
+    float: left;
+}
+
+#Steps-Ingridients{
+    margin: 10px 10px 10px 220px;
+    float: left;
+}
+
+.category{
+    margin-right: -50px;
+}
+
+#submitButton{
+    margin-top: 300px;
+	background:linear-gradient(to bottom, #e62719 5%, #eb675e 100%);
+	background-color:#e62719;
+	border-radius:17px;
+	border:2px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:15px;
+	font-weight:bold;
+	padding:14px 28px;
+	text-decoration:none;
+}

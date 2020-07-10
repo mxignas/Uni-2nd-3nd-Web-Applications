@@ -1,0 +1,205 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+<title>Recipe sharing</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="./CSS/style.css"/>
+<link rel="stylesheet" type="text/css" href="./CSS/listRecipe.css"/>
+<link rel="stylesheet" type="text/css" href="./CSS/viewRecipe.css"/>
+
+<script src="./JS/spafunctions.js"></script>
+<script src="./JS/imagepreview.js"></script>
+<script src="./JS/recipeupload.js"></script>
+<script src="./JS/sqlconnection.js"></script>
+
+
+</head>
+<body>
+
+<!-- start of #header -->
+<div id="header">
+    <p id="headerTitle">Share Your Experience</p>
+    <a href="#" data-target="createRecipe" class="nav-link">
+        <button id="headerButton"> SHARE!</button>
+    </a>
+</div>
+<!--end #header-->
+
+<br>    
+<div id="navbar">
+<ul>
+    <li><a href="#" data-target="home" class="nav-link">Home</a></li>
+</ul>
+</div>
+<br>
+<main>
+
+
+    <!-- home "page" -->
+    <div class="page selected" id="home">
+
+        <!-- div where to insert new recipe -->
+    <div id="newRecipe">
+        
+    </div>
+
+    <!-- end of new recipe -->
+        <div class="cell_1">
+            <a href="#" data-target="recipe_1" class="nav-link">
+                <img class="mainPic" src="./pictures/thai.jpg" alt="Thai">
+            </a>
+        </div>
+        <!-- end #cell_1-->
+        <div class="cell_2">
+            <h2>Thai fried prawn & pineapple rice</h2>
+            <p class="description">This quick, low calorie supper is perfect for a busy weeknight. Cook your rice in advance to get ahead - run it under cold water to chill quickly, then freeze in a food bag for up to one month</p>
+            <div class="iconsDiv">
+                <p class="icons"><img src="https://img.icons8.com/pastel-glyph/40/000000/time.png" alt="time"/> Time to make: 25 mins </p>
+                <p class="icons"><img src="https://img.icons8.com/dotty/40/000000/money.png" alt="cost"/> Costs: 12£</p>
+            </div>
+        </div>
+        <!--end #cell_2-->
+        <hr /> <!-- ****************************************************************************** -->
+
+        <div class="cell_1">
+            <a href="#" data-target="recipe2" class="nav-link">
+                <img class="mainPic" src="./pictures/gnocchi.jpg" alt="gnocchi">
+            </a>
+        </div>
+        <!--end #cell_1-->
+        <div class="cell_2">
+            <h2>Chorizo & mozzarella gnocchi bake</h2>
+            <p class="description">Upgrade cheesy tomato pasta with gnocchi, chorizo and mozzarella for a comforting bake that makes an excellent midweek meal</p>
+            <div class="iconsDiv">
+                <p class="icons"><img src="https://img.icons8.com/pastel-glyph/40/000000/time.png" alt="time"/> Time to make: 35 mins </p>
+                <p class="icons"><img src="https://img.icons8.com/dotty/40/000000/money.png" alt="cost"/> Costs: 6£</p>
+            </div>
+        </div>
+        <!--end #cell_2-->
+        <hr /> <!-- ****************************************************************************** -->
+
+        <div class="cell_1">
+            <a href="#" data-target="recipe3" class="nav-link">
+                <img class="mainPic" src="./pictures/spaghetti.jpg" alt="spaghetti">
+            </a>
+        </div>
+        <!--end #cell_1-->
+        <div class="cell_2">
+            <h2>One-pan spaghetti with nduja, fennel & olives</h2>
+            <p class="description">A spicy sausage pasta dish with a difference. Using the cooking water helps the sauce cling to the pasta and gives the dish more body. A silky smooth sauce, perfect pasta and one pan to wash!</p>
+            <div class="iconsDiv">
+                <p class="icons"><img src="https://img.icons8.com/pastel-glyph/40/000000/time.png" alt="time"/> Time to make: 30 mins </p>
+                <p class="icons"><img src="https://img.icons8.com/dotty/40/000000/money.png" alt="cost"/> Costs: 5£</p>
+            </div>
+        </div>
+        <!--end #cell_2--> <!-- ****************************************************************************** -->
+    </div>
+    <!-- end of main page -->
+
+
+<!-- div to insert new recipes to view -->
+<div class="page" id="viewRecipes">
+
+</div>
+
+<!-- View Recipe "page" -->
+<div class="page " id="recipe_1">
+
+        <div id="mainPicView">
+            <img id="picView" src="./pictures/thai.jpg" alt="Thai"> <br><br>
+            <div id="rcpInfo">
+                <h3> Recipe Information:</h3>
+                <textarea name="NameView" id="NameView" cols="30">Thai fried prawn & pineapple rice</textarea> <br> <br>
+                <textarea name="prepView" id="prepView" cols="30">Preparation time: 10min</textarea> <br><br>
+                <textarea name="cookView" id="cookView" cols="30">Cooking time: 15min</textarea> <br><br>
+                <textarea name="costView" id="costView" cols="30">Costs: 12£</textarea><br><br>
+                <textarea name="categoryView" id="categoryView" cols="30">Lunch</textarea><br><br>
+                <textarea name="ownerView" id="ownerView" cols="30">Owner: Ignas Lamanauskas</textarea><br><br>
+            </div>
+        </div>
+
+         <div id="description-ingridients">
+            <textarea name="descripView" id="descripView" cols="40" rows="10"> This quick, low calorie supper is perfect for a busy weeknight. Cook your rice in advance to get ahead - 
+run it under cold water to chill quickly, then freeze in a food bag for up to one month</textarea> <br><br>
+            <textarea name="ingridientView" id="ingridientView" cols="40" rows="20">1: 2 tsp sunflower oil&#13;&#10;
+2: bunch spring onions, greens and whites separated, both sliced &#13; &#10;
+3: 1 green pepper, deseeded and chopped into small chunks&#13;&#10;
+4: 140g pineapple, chopped into bite-sized chunks&#13;&#10;
+5: 3 tbsp Thai green curry paste&#13;&#10;
+6: 4 tsp light soy sauce, plus extra to serve&#13;&#10;
+7: 300g cooked basmati rice (brown, white or a mix - about 140g uncooked rice)&#13;&#10;
+8: 140g frozen peas, 2 large eggs, beaten&#13;&#10;
+9: 225g can bamboo shoots, drained. 250g frozen prawns, cooked or raw&#13;&#10;
+10: 2-3 limes, 1 juiced, the rest cut into wedges to serve
+            </textarea>
+         </div>
+
+         <div id="steps">
+             <textarea name="stepsView" id="stepsView" cols="60" rows="20">Step 1: Heat the oil in a wok or non-stick frying pan and fry the spring onion whites for 2 mins until softened. Stir in the pepper for 1 min, 
+followed by the pineapple for 1 min more, then stir in the green curry paste and soy sauce.&#13;&#10;&#13;&#10;Step 2: Add the rice, stir-frying until piping hot, then push the rice to one side of the pan and scramble the eggs on the other side. 
+Stir the peas, bamboo shoots and prawns into the rice and eggs, then heat through for 2 mins until the prawns are hot and the peas tender. &#13;&#10;&#13;&#10;Step 3: Finally, stir in the spring onion greens, lime juice and coriander, if using. 
+Spoon into bowls and serve with extra lime wedges and soy sauce.&#13;&#10;&#13;&#10;Step 4: 
+             </textarea>
+         </div>
+</div>
+<!-- end or View Recipe "page" -->
+
+
+<!-- Create recipe "page" -->
+<div class="page" id="createRecipe">
+
+    <!-- Image uploadd -->
+    <div id="imagePreview" class="imagePreview">
+        <form action='http://localhost:8080/upload' method='post' encType="multipart/form-data">
+            <img src="" alt="Image Preview" class="imagePreview">
+            <input type="file" name="inpFile" id="inpFile">
+            <button type="submit" onclick="addRecipe()" id="submitButton">SUBMIT</button>
+        </form>
+
+        <p id="addRecipeResult"></p>   <!-- feedback about adding new recipe -->
+    </div>
+    
+    <div id="personalInformation">
+            <h3> Personal Information </h3>
+            <input type="text" placeholder="First Name" name="firstNameCreate" id="firstNameCreate"> <br> <br>
+            <input type="text" placeholder="Last Name" name="lastNameCreate" id="lastNameCreate">
+    </div>
+
+    <div id="recipeInformation">
+        <h3> Recipe Information</h3>
+        <input type="text" placeholder="Name of the meal" name="NameCreate" id="NameCreate"> <br> <br>
+        <input type="text" placeholder="Preparation time" name="prepCreate" id="prepCreate"> <br> <br>
+        <input type="text" placeholder="Cooking time" name="cookCreate" id="cookCreate"> <br> <br>
+        <input type="text" placeholder="Costs £" name="costCreate" id="costCreate"> <br> <br>
+        <select name="mealCategory" class="category" id="mealCategory">
+            <option value=""> Please choose a meal category</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Brunch">Brunch</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Tea">Tea</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Snack">Snack</option>
+        </select> <br><br>
+        <textarea id="descripCreate" placeholder="Description for the meal" rows="8" cols="40"></textarea>
+    </div>
+
+    <div id="Steps-Ingridients">
+        <h3>Steps</h3>
+        <textarea name="stepsCreate" id="stepsCreate" rows="15" cols="35">Step 1: &#13;&#10;&#13;&#10;Step 2: &#13;&#10;&#13;&#10;Step 3: &#13;&#10;&#13;&#10;Step 4: </textarea> <br><br>
+        <h3>Ingridients</h3>
+        <textarea name="ingridientCreate" id="ingridientCreate" cols="35" rows="15">1:&#13;&#10;2:&#13;&#10;3:&#13;&#10;4:&#13;&#10;5:&#13;&#10;6:&#13;&#10;7:&#13;&#10;8:&#13;&#10;9:&#13;&#10;10:</textarea>
+    </div>
+
+</div>
+<!-- End of recipe creating "page" -->
+
+</main>
+
+<!-- start of #footer -->
+<div id="footer"> Copyright, &copy; 2020 <a href="#">Ignas Lamanauskas</a>
+</div>
+<!--end #footer-->
+
+</body>
+</html>
